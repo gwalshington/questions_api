@@ -3,7 +3,7 @@ class AnimalsController < ApplicationController
 
   # GET /animals
   def index
-    @animals = Animal.all
+    @animals = Animal.order("RANDOM()").limit(1)
 
     render json: @animals
   end
