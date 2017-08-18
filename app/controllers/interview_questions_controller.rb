@@ -3,7 +3,7 @@ class InterviewQuestionsController < ApplicationController
 
   # GET /interview_questions
   def index
-    @interview_questions = InterviewQuestion.all
+    @interview_questions = InterviewQuestion.order("RANDOM()").limit(1)
 
     render json: @interview_questions
   end
