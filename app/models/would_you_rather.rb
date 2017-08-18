@@ -1,0 +1,2 @@
+class WouldYouRather < ApplicationRecord
+end

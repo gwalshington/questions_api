@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :would_you_rathers
   resources :animals
   resources :animal_pictures
   resources :questions
