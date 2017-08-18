@@ -3,7 +3,7 @@ class WouldYouRathersController < ApplicationController
 
   # GET /would_you_rathers
   def index
-    @would_you_rathers = WouldYouRather.all
+    @would_you_rathers = WouldYouRather.order("RANDOM()").limit(1)
 
     render json: @would_you_rathers
   end
